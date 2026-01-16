@@ -1,6 +1,9 @@
 const sumAll = function (numA, numB) {
   let result = 0;
-  if (numA <= numB) {
+
+  if (numA < 0 || numB < 0) {
+    return "ERROR";
+  } else if (numA <= numB) {
     for (let i = numA; i <= numB; i++) {
       result += i;
     }
