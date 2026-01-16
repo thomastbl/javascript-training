@@ -4,7 +4,10 @@ const sumAll = function (numA, numB) {
   if (
     numA < 0 ||
     numB < 0 ||
-    !(Number.isInteger(numA) || !Number.isInteger(numB))
+    !Number.isInteger(numA) ||
+    !Number.isInteger(numB) ||
+    typeof numA !== "number" ||
+    typeof numB !== "number"
   ) {
     return "ERROR";
   } else if (numA <= numB) {
