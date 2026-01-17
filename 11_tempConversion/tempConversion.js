@@ -2,7 +2,7 @@ const convertToCelsius = function (fahrenheitTemp) {
   if (((fahrenheitTemp - 32) * (5 / 9)) % 2 === 0) {
     return (fahrenheitTemp - 32) * (5 / 9);
   } else {
-    return ((fahrenheitTemp - 32) * (5 / 9)).toFixed(1);
+    return Number(((fahrenheitTemp - 32) * (5 / 9)).toFixed(1));
   }
 };
 
