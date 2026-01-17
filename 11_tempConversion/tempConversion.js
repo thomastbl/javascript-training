@@ -7,7 +7,11 @@ const convertToCelsius = function (fahrenheitTemp) {
 };
 
 const convertToFahrenheit = function (celsiusTemp) {
-  (celsiusTemp * (9 / 5) + 32).toFixed(1);
+  if ((celsiusTemp * (9 / 5) + 32) % 2 === 0) {
+    return celsiusTemp * (9 / 5) + 32;
+  } else {
+    return Number((celsiusTemp * (9 / 5) + 32).toFixed(1));
+  }
 };
 
 // Do not edit below this line
