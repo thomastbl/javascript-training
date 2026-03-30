@@ -22,7 +22,15 @@ const power = function (numA, numB) {
   return numA ** numB;
 };
 
-const factorial = function () {};
+const factorial = function (numA) {
+  let n = 1;
+  let fn = 1;
+  while (numA >= n) {
+    fn = fn * n;
+    n++;
+  }
+  return fn;
+};
 
 // Do not edit below this line
 module.exports = {
