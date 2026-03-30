@@ -18,7 +18,9 @@ const multiply = function (array) {
   }, 1);
 };
 
-const power = function () {};
+const power = function (numA, numB) {
+  return numA ** numB;
+};
 
 const factorial = function () {};
 
